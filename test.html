@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="block1">
+<h1 class="white">Welcome to FoodSuggestor!!</h1>
+
+<div class="big-container">
+<form action='/hello/{{name}}/result' method='post'>
+
+<div class="description">
+<h1 >Are you tired of not knowing what to have for dinner?</h1>
+<h1>Not sure if your meal is healthy enough?</h1>
+<p>We are trying to make life a bit easier by suggesting "reasonable" choices of foods for you and your loved ones! </p>
+
+</div>
+<div class="meal-container">
+<h1>For which meal should we suggest?</h1>
+<select class="meal" name="meal">
+<option value="breakfast">Breakfast</option>
+<option value="lunch">Lunch</option>
+<option value="dinner">Dinner</option>
+</select>
+</div>
+
+<!--<div class="allergy-container">
+<h2>What are you allergic to?</h2>
+<input type="checkbox" name="nothing"> Not allergic to anything<br>
+<input type="checkbox" name="peanut"> Peanut <br>
+<input type="checkbox" name="pollen"> Pollen <br>
+<input type="checkbox" name="egg"> Egg <br>
+</div>-->
+<input class="submit" type ='submit' value="submit">
+</form>
+</div>
+<div class="description">
+<p>Fun fact: On average, women spend approximately 2 years of their lives thinking about their next meal!</p>
+</div>
+{% endblock %}

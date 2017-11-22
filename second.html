@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="block1">
+
+<div class="display">
+<div class="suggestion">
+<h1> Here is our suggestion! </h1>
+<p> {{food}} </p>
+</div>
+<div class="nutrition_facts">
+<h2> Nutrition facts </h2>
+<p> <strong>Total Calories</strong> {{calories}} Calories </p>
+<hr>
+<p> <strong> Protein </strong> {{protein}} grams</p>
+<hr>
+<p> <strong> Fiber </strong> {{fiber}} grams </p>
+<hr>
+<p> <strong> Vitamin A </strong> {{vitaminA}} percent </p>
+</div>
+<a class="try" href="/hello/<string:name>/">Lets do it again!</a>
+</div>
+</div>
+{% endblock %}
